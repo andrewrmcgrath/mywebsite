@@ -1,22 +1,94 @@
 
-/* Sytle the Library Image */
+.carousel {
+  width: 960px;
+  margin: 0 auto;
+  top: 100px;
+}
+
+/*////////// CAROUSEL //////////*/
+
+#frame {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+}
+
+#tray {
+  position: relative;
+  /*right: 0;
+  width: 2400px;*/
+}
+
+.slide {
+  float: left;
+  width: 800px;
+  height: 600px;
+}
+
+#prev, #next {
+  position: absolute;
+  top: 30%;
+  color: blue;
+  text-shadow: 2px 2px 0px black, -2px -2px 0px black;
+}
+#prev { left: 0; }
+#next { right: 0; }
+
+#prev:hover, #next:hover {
+  color: black;
+  text-shadow: 2px 2px 0px white, -2px -2px 0px white;
+}
+
+
+
+
+
+
+/* Stlying for all headers */
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+
+h1 {
+  font-size:3em;
+  line-height: 2em; 
+  font-family: 'Clicker Script',
+}
+
+/* Sytle the Library Logo Image */
  
 
 #home img {
   width: 100vw;
   height: 100vh;
+  max-width: 100%;
+  
 }
 
-@media screen and (min-width: 40em) {
-  .img {
 
-    position: relative;
+ /*
+@media only screen and (max-device-width: 480px) {
+  /* define mobile specific styles come here */
+/* #home img { 
+    background: url(images/trinity.lib.jpg); 
+    width: 400px; 
   }
 }
+/*
+
+
+
+
+/* social media style */
+
+.wrapper { 
+    position: relative;
+    top: 125px;
+    left: auto; 
+}
+
 
 
 /*style the Nav bar */ 
-
 
 
 
@@ -25,7 +97,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
 fieldset, form, label, legend, th, td,
 article, aside, figure, footer, header, hgroup, menu, nav, section,
-summary, hgroup {
+summary, hgroup, img, {
   margin: 0;
   padding: 0;
   border: 0;
